@@ -1,43 +1,35 @@
 <p id="notice"><%= notice %></p>
 
-<h1> Musée </h1>
-<h2> Antithèse  </h2>
-<h3> Lucas <span style="color: #cbb975"> Marsalle </span> </h3>
-
-<body>
-
-<div class="flex-container-bande">
-<div class="bande"></div>
-<div class="bande"></div>
- </div>
+<h1>Arts</h1>
 
 <table>
+  <thead>
+    <tr>
+      <th>Author</th>
+      <th>Description</th>
+      <th>Title</th>
+      <th>Date</th>
+      <th>Theme</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
   <tbody>
     <% @arts.each do |art| %>
-      <tr class="flex-container">
-        <td class="titre"><%= art.title %></td>
-        <td class="auteur"><%= art.author %></td>
-        <td class=theme><%= art.theme %></td>
-        <td><img class="popo" src="<%= art.photo %>" width="600px"/></td>>
-        <tr class="boutons">
-        <td> <%= link_to 'Show', art %> </td>
+      <tr>
+        <td><%= art.author %></td>
+        <td><%= art.description %></td>
+        <td><%= art.title %></td>
+        <td><%= art.date %></td>
+        <td><%= art.theme %></td>
+        <td><%= link_to 'Show', art %></td>
         <td><%= link_to 'Edit', edit_art_path(art) %></td>
         <td><%= link_to 'Destroy', art, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        </tr> 
-      </tr> 
+      </tr>
     <% end %>
-    <%= link_to 'New Art', new_art_path %>
-
   </tbody>
 </table>
-</body>
+
 <br>
 
-
-
-
-
-
-
-
-
+<%= link_to 'New Art', new_art_path %>
