@@ -1,0 +1,135 @@
+h1{
+	color:white;
+	font-family: cinzel, serif;
+	font-size: 1600%;
+	position: absolute; 
+  	top: 15%; left: 50%; 
+  	transform: translate(-50%, -50%);
+  	text-shadow: 1px 1px 2px black;
+}
+
+h2{
+	color: #cbb975;
+	font-family: SignPainter, sans-serif;
+	font-size: 700%;
+	position: absolute; 
+  	top: 45%; left: 50%; 
+  	transform: translate(-50%, -50%);
+  	text-shadow: 1px 1px 2px black;
+}
+
+h3{
+	color:white;
+	font-family: Arial ;
+	font-size: 200%;
+	position: absolute; 
+  	top: 90%; left: 50%; 
+  	transform: translate(-50%, -50%);
+  	text-shadow: 1px 1px 2px black;
+}
+
+
+
+a {
+	font-family: Arial;
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+	background: none;
+	line-height: 50px;
+	border : 1px solid #cbb975;
+	vertical-align: middle;
+
+}
+
+body{
+	background-color: rgb(38,38,40);
+	margin:0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+th{
+	color:white;
+	font-family: Arial;
+	font-size: 100%;
+	
+}
+
+tr{
+	align-items: center;
+}
+
+td{
+	color:white;
+	font-size: 100%;
+
+}
+table{
+	margin-top: 800px;
+}
+
+p{
+	font-family: Arial;
+	color: white;
+}
+
+
+.popo{
+	margin-top: 5%;
+	display: block;
+}
+.flex-container{
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 10%;
+}
+.titre {
+	text-shadow: 1px 1px 2px black;
+	color: #cbb975;
+	font-family: SignPainter, sans-serif;
+	font-size: 465%;
+	text-align: center;
+}
+
+.auteur{
+	font-family: Arial, sans-serif;
+	text-shadow: 1px 1px 2px black;
+
+}
+
+.boutons {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+
+	margin : 25px 30%;
+}
+
+.flex-container-bande{
+	width: 100vw;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	position: absolute;
+	z-index: -10;
+}
+
+.bande {
+	background-color:  #cbb975;
+	width: 5%;
+	height: 4500px;
+}
+
+.NouvelleOeuvre{
+	font-size: 500%;
+	color:white;
+	font-family: cinzel, serif;
+	text-align: center;
+  	text-shadow: 1px 1px 2px black;
+}
