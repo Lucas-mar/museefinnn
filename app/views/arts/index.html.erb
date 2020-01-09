@@ -11,8 +11,6 @@
 
 
 <table>
-  
-
   <tbody>
     <% @arts.each do |art| %>
       <tr>
@@ -20,7 +18,7 @@
         <td class="titre"><%= art.title %></td>
         <td class="auteur"><%= art.author %></td>
         <td class=theme><%= art.theme %></td>
-        <td><img class="popo" src="<%= art.photo %>" width="600px"/></td>>
+        
         <tr class="boutons">
         <td> <%= link_to 'Show', art %> </td>
         <td><%= link_to 'Edit', edit_art_path(art) %></td>
@@ -28,19 +26,8 @@
         </tr> 
       </tr>
     <% end %>
-      <%= link_to 'New Art', new_art_path %>
   </tbody>
 </table>
 <body/>
-<br>
 
-
-
-
-
-
-
-
- 
-      
-   
+<%= link_to 'New Art', new_art_path %>
